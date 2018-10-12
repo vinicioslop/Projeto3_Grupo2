@@ -9,6 +9,6 @@ package br.com.fatecpg.web;
  *
  * @author valre
  */
-public class Db {
+public class Db_pj {
     
 }
