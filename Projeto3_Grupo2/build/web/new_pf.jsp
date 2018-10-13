@@ -41,5 +41,6 @@
             <%} catch (Exception e){%>
             
            <%}%>
+           <a href="home.jsp"><button>Voltar</button></a>
     </body>
 </html>

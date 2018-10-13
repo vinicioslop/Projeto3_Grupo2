@@ -1,6 +1,6 @@
 <%-- 
-    Document   : alter_pf
-    Created on : 12/10/2018, 17:12:30
+    Document   : footer
+    Created on : 12/10/2018, 17:25:42
     Author     : valre
 --%>
 
@@ -13,6 +13,5 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <a href="home.jsp"><button>Voltar</button></a>
     </body>
 </html>
