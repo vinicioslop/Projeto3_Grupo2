@@ -31,7 +31,6 @@ public class Db_pf {
            c3.setPessoaFisica("Amaro", "48831300800", "(13)35761179", "amaro@gaiden.com");
            CADASTROPF.add(c3);
         }
-        
         return CADASTROPF;
         
     }

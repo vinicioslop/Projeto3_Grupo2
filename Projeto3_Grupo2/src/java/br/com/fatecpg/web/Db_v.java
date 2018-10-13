@@ -32,7 +32,6 @@ public class Db_v {
             VEICULO.add(v3);
         }
         
-        
         return null;
         
     }

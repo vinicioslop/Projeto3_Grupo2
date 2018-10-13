@@ -31,8 +31,6 @@ public class Db_pj {
             d3.setPessoaJuridica(" PONTAL SURF SHOP","PONTAL COMERCIO E ESPORTES LTDA"," 11.265.452/0001-11", "(13)9999-9999","pontal.com");
             CADASTROPJ.add(d3);
             
-             
-             
          }
          return null;
      }
