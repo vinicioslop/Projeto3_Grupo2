@@ -20,20 +20,22 @@
         <table border="1">
             <tr>
                 <th>Nome</th>
+                <th>CPF</th>
                 <th>Email</th>
                 <th>Telefone</th>
                 <th>Comandos</th>
-                <%for(PessoaFisica c: Db_pf.getContatos()){%>
+                <%for(PessoaFisica c: Db_pf.getPessoaFisicas()){%>
                 
                 
                 <%}%>
             </tr>
-            <%for(PessoaFisica c: Db_pf.getContatos()){%>
+            <%for(PessoaFisica npf: Db_pf.getPessoaFisicas()){%>
             <tr>
-                <td><%= c.getNome()%></td>
-                <td><%= c.getEmail()%></td>
-                <td><%= c.getTel_pf()%></td>
-                <% int i = Db.getContatos().indexOf(c); %>
+                <td><%= npf.getNome()%></td>
+                <td><%= npf.getCpf()%></td>
+                <td><%= npf.getEmail()%></td>
+                <td><%= npf.getTel_pf()%></td>
+                <% int i = Db_pf.getPessoaFisicas().indexOf(npf); %>
                 <td>
                     <a href="alter_pf.jsp"><button>Alterar Pessoa Fisica</button></a>
                     <a href="remove_pf.jsp"><button>Remover Pessoa Fisica</button></a>
