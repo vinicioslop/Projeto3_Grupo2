@@ -37,12 +37,11 @@
                 <td><%= npf.getTel_pf()%></td>
                 <% int i = Db_pf.getPessoaFisicas().indexOf(npf); %>
                 <td>
-                    <a href="alter_pf.jsp"><button>Alterar Pessoa Fisica</button></a>
-                    <a href="remove_pf.jsp"><button>Remover Pessoa Fisica</button></a>
+                    <a href="alter_pf.jsp?i=<%= i %>"><button>Alterar</button></a>
+                    <a href="remove_pf.jsp?i=<%= i %>"><button>Remover</button></a>
                 </td>
             </tr>
             <%}%>
         </table>
-        <a href="home.jsp"><button>Voltar</button></a>
     </body>
 </html>

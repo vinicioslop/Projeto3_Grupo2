@@ -38,7 +38,7 @@
             CNPJ:<br><input type="text" name="cnpj"/><br>
             Telefone: <br><input type="text" name="tel_pj"/><br>
             Site: <br><input type="text" name="site"/><br>
-            <br><input type="submit" name="veiculo" value="Incluir"/>
+            <br><input type="submit" name="novoPJ" value="Incluir"/>
         </form>
         
                

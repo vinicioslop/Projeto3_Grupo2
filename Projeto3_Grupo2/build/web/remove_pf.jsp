@@ -15,7 +15,7 @@
     </head>
     
     <%int i = Integer.parseInt(request.getParameter("i"));%>
-    <%PessoaFisica npf = Db_pf.getPessoaFisicas().get(i);%>
+    <% PessoaFisica npf = Db_pf.getPessoaFisicas().get(i);%>
     
     <body>
         <h2>Remover</h2>
