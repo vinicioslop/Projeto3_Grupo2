@@ -15,6 +15,15 @@ public class PessoaFisica {
     private String cpf;
     private String tel_pf;
     private String email;
+    
+    public void setPessoaFisica (String nome, String cpf, String tel_pf, String email){
+        
+        this.setNome(nome);
+        this.setCpf(cpf);
+        this.setTel_pf(tel_pf);
+        this.setEmail(email);
+    }
+    
 
     public String getNome() {
         return nome;

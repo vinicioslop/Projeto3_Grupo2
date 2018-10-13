@@ -16,6 +16,16 @@ public class PessoaJuridica {
     private String tel_pj;
     private String site;
 
+public void setPessoaJuridica (String nome, String razao,String cnpj, String tel_pj, String site){
+        
+        this.setNome(nome);
+        this.setRazao(razao);
+        this.setCnpj(cnpj);
+        this.setTel_pj(tel_pj);
+        this.setSite(site);
+    }
+    
+    
     public String getNome() {
         return nome;
     }

@@ -16,6 +16,15 @@ public class Veiculo {
     private String modelo;
     private String cor;
 
+    
+    public void setVeiculo (String placa, String marca, String modelo, String cor){
+    
+        this.setPlaca(placa);
+        this.setMarca(marca);
+        this.setModelo(modelo);
+        this.setCor(cor);
+    }
+
     public String getPlaca() {
         return placa;
     }

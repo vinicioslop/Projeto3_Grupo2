@@ -14,6 +14,7 @@
         <title>Novo - Contatos</title>
     </head>
     <body>
+<<<<<<< HEAD
         <h1>Cadastro de Contatos</h1>
         <h2>Novo</h2>
         <% 
@@ -34,5 +35,35 @@
             Email:<br/><input type="text" name="email"/><br/>
             <br/><input type="submit" name="newPF" value="Incluir"/>
         </form>
+=======
+        <h1>Cadastro Pessoa Fisica</h1>
+        
+        <%try {
+            if(request.getParameter("novoPF")!=null){
+                String nome = request.getParameter("nome");
+                String cpf = request.getParameter("cpf");
+                String tel_pf = request.getParameter("tel_pf");
+                String email = request.getParameter("email");
+                
+                PessoaFisica npf = new PessoaFisica();
+                npf.setPessoaFisica(nome, cpf, tel_pf, email);
+                Db_pf.getPessoaFisicas().add(npf);
+                response.sendRedirect("home.jsp");
+            }
+            %>
+            
+        <form>
+            Nome: <br><input type="text" name="nome"/><br>
+            CPF:<br><input type="text" name="cpf"/><br>
+            Telefone: <br><input type="text" name="tel_pf"/><br>
+            E-mail: <br><input type="text" name="email"/><br>
+            <br><input type="submit" name="veiculo" value="Incluir"/>
+        </form>
+               
+            <%} catch (Exception e){%>
+            
+           <%}%>
+        
+>>>>>>> f6a076bf31b308190efbc76d6dc64a87649e1275
     </body>
 </html>
