@@ -35,7 +35,7 @@
             CPF:<br><input type="text" name="cpf"/><br>
             Telefone: <br><input type="text" name="tel_pf"/><br>
             E-mail: <br><input type="text" name="email"/><br>
-            <br><input type="submit" name="veiculo" value="Incluir"/>
+            <br><input type="submit" name="novoPF" value="Incluir"/>
         </form>
                
             <%} catch (Exception e){%>
