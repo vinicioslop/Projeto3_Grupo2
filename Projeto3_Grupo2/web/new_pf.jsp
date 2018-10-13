@@ -14,28 +14,6 @@
         <title>Novo - Contatos</title>
     </head>
     <body>
-<<<<<<< HEAD
-        <h1>Cadastro de Contatos</h1>
-        <h2>Novo</h2>
-        <% 
-            if(request.getParameter("newPF")!= null){
-                String nome = request.getParameter("nome");
-                String email = request.getParameter("email");
-                String telefone = request.getParameter("telefone");
-                PessoaFisica c = new PessoaFisica();
-                c.setDados(nome, email, telefone);
-                Db_pf.getContatos().add(c);
-                response.sendRedirect("home.jsp");
-            
-            }
-        %> 
-        <form>
-            Nome:<br/><input type="text" name="nome"/><br/>
-            Telefone:<br/><input type="text" name="telefone"/><br/>
-            Email:<br/><input type="text" name="email"/><br/>
-            <br/><input type="submit" name="newPF" value="Incluir"/>
-        </form>
-=======
         <h1>Cadastro Pessoa Fisica</h1>
         
         <%try {
@@ -63,7 +41,5 @@
             <%} catch (Exception e){%>
             
            <%}%>
-        
->>>>>>> f6a076bf31b308190efbc76d6dc64a87649e1275
     </body>
 </html>
