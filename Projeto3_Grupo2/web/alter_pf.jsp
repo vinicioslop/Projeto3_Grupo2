@@ -11,31 +11,33 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Alterar - Contatos</title>
+        <title>Alterar - Pessoa Física</title>
     </head>
     
     <%int i = Integer.parseInt(request.getParameter("i"));%>
-    <% PessoaFisica c = Db_pf.getPessoaFisicas().get(i);%>
+    <%PessoaFisica npf = Db_pf.getPessoaFisicas().get(i);%>
     
     <body>
-        <h1>Cadastro de Contatos</h1>
+        <h1>Cadastro de Pessoa Física</h1>
         <h2>Alterar</h2>
         <%
-            if(request.getParameter("alterarContato")!=null){
-                c.setNome(request.getParameter("nome"));
-                c.setEmail(request.getParameter("email"));
-                c.setTel_pf(request.getParameter("telefone"));
-                Db_pf.getPessoaFisicas().set(i,c);
+            if(request.getParameter("alterPF")!=null){
+                npf.setNome(request.getParameter("nome"));
+                npf.setCpf(request.getParameter("cpf"));
+                npf.setEmail(request.getParameter("email"));
+                npf.setTel_pf(request.getParameter("tel_pf"));
+                Db_pf.getPessoaFisicas().set(i,npf);
                 response.sendRedirect("home.jsp");
             }
         %>
         <form>
             Indice: <%= i %><br/><br/>
             <input type="hidden" name="i" value="<%=i%>"/>
-            Nome:<br/><input type="text" name="nome" value="<%=c.getNome()%>"/><br/>
-            Telefone:<br/><input type="text" name="telefone" value="<%=c.getTel_pf()%>"/><br/>
-            Email:<br/><input type="text" name="email" value="<%=c.getEmail()%>"/><br/>
-            <br/><input type="submit" name="alterarContato" value="Alterar"/>
+            Nome:<br/><input type="text" name="nome" value="<%=npf.getNome()%>"/><br/>
+            Nome:<br/><input type="text" name="cpf" value="<%=npf.getCpf()%>"/><br/>
+            Email:<br/><input type="text" name="email" value="<%=npf.getEmail()%>"/><br/>
+            Telefone:<br/><input type="text" name="tel_pf" value="<%=npf.getTel_pf()%>"/><br/>
+            <br/><input type="submit" name="alterPF" value="Alterar"/>
         </form>
     </body>
 </html>
