@@ -27,7 +27,7 @@
                 npf.setEmail(request.getParameter("email"));
                 npf.setTel_pf(request.getParameter("tel_pf"));
                 Db_pf.getPessoaFisicas().set(i,npf);
-                response.sendRedirect("home.jsp");
+                response.sendRedirect("Pessoa_Fisica.jsp");
             }
         %>
         <form>

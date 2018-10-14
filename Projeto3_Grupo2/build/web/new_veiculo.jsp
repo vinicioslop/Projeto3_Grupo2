@@ -37,7 +37,7 @@
             Marca: <br><input type="text" name="marca"/><br>
             Modelo:<br><input type="text" name="modelo"/><br>
             Cor: <br><input type="text" name="cor"/><br>
-            <br><input type="submit" name="veiculo" value="Incluir"/>
+            <br><input type="submit" name="novoV" value="Incluir"/>
         </form>
         
         <%} catch (Exception e) {%>

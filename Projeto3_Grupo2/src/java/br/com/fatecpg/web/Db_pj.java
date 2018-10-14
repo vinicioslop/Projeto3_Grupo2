@@ -15,7 +15,7 @@ public class Db_pj {
     
     public static final ArrayList<PessoaJuridica> CADASTROPJ  = new ArrayList<>();
     
-     public static ArrayList<PessoaJuridica> getPessoaJuridicas (){
+     public static ArrayList<PessoaJuridica> getPessoaJuridicas(){
         
          if (CADASTROPJ.isEmpty()) {
              
@@ -32,6 +32,6 @@ public class Db_pj {
             CADASTROPJ.add(d3);
             
          }
-         return null;
+         return CADASTROPJ;
      }
 }

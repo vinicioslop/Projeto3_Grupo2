@@ -1,11 +1,11 @@
-package br.com.fatecpg.web;
-import java.util.ArrayList;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+package br.com.fatecpg.web;
+import java.util.ArrayList;
 
 /**
  *
@@ -24,15 +24,15 @@ public class Db_v {
             VEICULO.add(v1);
            
             Veiculo v2 = new Veiculo();
-            v1.setVeiculo("RBO3090", "Maserati", "GranTurismo", "Prata");
+            v2.setVeiculo("RBO3090", "Maserati", "GranTurismo", "Prata");
             VEICULO.add(v2);
             
             Veiculo v3 = new Veiculo();
-            v1.setVeiculo("UUO3760", "jac", "T6", "Branco");
+            v3.setVeiculo("UUO3760", "jac", "T6", "Branco");
             VEICULO.add(v3);
         }
         
-        return null;
+        return VEICULO;
         
     }
 }

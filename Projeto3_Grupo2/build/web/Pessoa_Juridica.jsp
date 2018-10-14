@@ -4,41 +4,42 @@
     Author     : vinic
 --%>
 
+<%@page import="br.com.fatecpg.web.Db_pj"%>
 <%@page import="br.com.fatecpg.web.PessoaJuridica"%>
-<%@page import="br.com.fatecpg.web.Db_pf"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Pessoa Júridica</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <h1>TesteEeEeEe - Vinícius</h1>
-        <a href="new_pf.jsp"><button>Nova Pessoa Fisica</button></a>
+        <h1>Página de Manutenção de Pessoa Júridica</h1>
+        <a href="new_pj.jsp"><button>Nova Pessoa Jurídica</button></a>
         <table border="1">
             <tr>
                 <th>Nome</th>
-                <th>CPF</th>
-                <th>Email</th>
+                <th>Razão</th>
+                <th>CNPJ</th>
                 <th>Telefone</th>
+                <th>Site</th>
                 <th>Comandos</th>
-                <%for(PessoaJuridica c: Db_pf.getPessoaJuridica()){%>
+                <%for(PessoaJuridica d: Db_pj.getPessoaJuridicas()){%>
                 
                 
                 <%}%>
             </tr>
-            <%for(PessoaFisica npf: Db_pf.getPessoaFisicas()){%>
+            <%for(PessoaJuridica d: Db_pj.getPessoaJuridicas()){%>
             <tr>
-                <td><%= npf.getNome()%></td>
-                <td><%= npf.getCpf()%></td>
-                <td><%= npf.getEmail()%></td>
-                <td><%= npf.getTel_pf()%></td>
-                <% int i = Db_pf.getPessoaFisicas().indexOf(npf); %>
+                <td><%= d.getNome()%></td>
+                <td><%= d.getRazao()%></td>
+                <td><%= d.getCnpj()%></td>
+                <td><%= d.getTel_pj()%></td>
+                <td><%= d.getSite()%></td>
+                <% int i = Db_pj.getPessoaJuridicas().indexOf(d); %>
                 <td>
-                    <a href="alter_pf.jsp?i=<%= i %>"><button>Alterar</button></a>
-                    <a href="remove_pf.jsp?i=<%= i %>"><button>Remover</button></a>
+                    <a href="alter_pj.jsp?i=<%= i %>"><button>Alterar</button></a>
+                    <a href="remove_pj.jsp?i=<%= i %>"><button>Remover</button></a>
                 </td>
             </tr>
             <%}%>

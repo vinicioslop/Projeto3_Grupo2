@@ -15,7 +15,6 @@
     </head>
     <body>
         <h1>Cadastro Pessoa Juridica</h1>
-        <h1>Hello World!</h1>
         
         
         <%try {
@@ -29,7 +28,7 @@
                 PessoaJuridica npj = new PessoaJuridica();
                 npj.setPessoaJuridica(nome, razao, cnpj, tel_pj, site);
                 Db_pj.getPessoaJuridicas().add(npj);
-                response.sendRedirect("home.jsp");
+                response.sendRedirect("Pessoa_Juridica.jsp");
             }%>
             
         <form>
@@ -45,6 +44,6 @@
             <%} catch (Exception e){%>
             
            <%}%>
-        
+           <a href="home.jsp"><button>Voltar</button></a>    
     </body>
 </html>

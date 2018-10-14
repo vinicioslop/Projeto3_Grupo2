@@ -23,7 +23,7 @@
             if(request.getParameter("removerPF")!=null){
                
                 Db_pf.getPessoaFisicas().remove(i);
-                response.sendRedirect("home.jsp");
+                response.sendRedirect("Pessoa_Fisica.jsp");
             }
         %>
         <form>

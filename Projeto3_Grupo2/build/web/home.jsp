@@ -14,8 +14,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <h1>TesteEeEeEe - Vinícius</h1>
+        <h1>INCLUIR ESTILIZAÇÃO</h1>
         <a href="Pessoa_Fisica.jsp"><button>Manutenção de Pessoa Física</button></a>
+        <a href="Pessoa_Juridica.jsp"><button>Manutenção de Pessoa Juridica</button></a>
+        <a href="Veiculo.jsp"><button>Manutenção de Veículo</button></a>
     </body>
 </html>

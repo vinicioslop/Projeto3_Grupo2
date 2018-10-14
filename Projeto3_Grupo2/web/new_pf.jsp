@@ -26,7 +26,7 @@
                 PessoaFisica npf = new PessoaFisica();
                 npf.setPessoaFisica(nome, cpf, tel_pf, email);
                 Db_pf.getPessoaFisicas().add(npf);
-                response.sendRedirect("home.jsp");
+                response.sendRedirect("Pessoa_Fisica.jsp");
             }
             %>
             
