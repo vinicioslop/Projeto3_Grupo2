@@ -63,7 +63,7 @@
                 <div class="col-sm-4">
                     <div class="thumbnail">
 
-                        <p><h2><strong>Valeria Regina</strong></h2></p>
+                        <p><h2><strong>Valéria Regina</strong></h2></p>
                         <p><h4>Estudante de Análise e Desenvolvimento de Sistemas em Fatec - Praia Grande</h4></p>
                        
                         <a href="https://github.com/ValeriaRoyal" <button class="btn btn-primary" >GitHub</button></a>
@@ -86,6 +86,6 @@
 
 
 
-
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
