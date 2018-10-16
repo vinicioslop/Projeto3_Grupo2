@@ -8,3 +8,44 @@ and open the template in the editor.
     Author     : valre
 */
 
+#bd{
+    background-color: lightseagreen
+}
+
+#botoes{
+    margin-left: 8%
+}
+
+#JB{
+   
+    background-color: gainsboro;
+    margin-top: -6%;
+    
+    
+        
+}
+
+#alunos{
+    margin-left: 10%;
+    background-color: #ced5e5;
+    margin-right: 10%
+}
+
+.container-fluid{
+    
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+#col1{
+    text-align: center
+}
+#col2{
+    text-align: center
+}
+#col3{
+    text-align: center
+}
