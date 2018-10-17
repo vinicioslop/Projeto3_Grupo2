@@ -15,7 +15,7 @@
         <li class="active"><a href="home.jsp">Home</a></li>
         <li><a href="Pessoa_Fisica.jsp">Pessoa Fisica</a></li>
         <li><a href="Pessoa_Juridica.jsp">Pessoa Juridica</a></li> 
-        <li><a href="Veiculo.jsp">manutenção de veiculos</a></li> 
+        <li><a href="Veiculo.jsp">Manutenção de Veiculos</a></li> 
       </ul>
     </div>
   </div>

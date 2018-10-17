@@ -20,22 +20,17 @@ and open the template in the editor.
    
     background-color: gainsboro;
     margin-top: -6%;
-    
-    
-        
+           
 }
-
-#alunos{
-    margin-left: 10%;
-    background-color: #ced5e5;
-    margin-right: 10%
+#JB2{
+    background-color: gainsboro;
+   
 }
 
 .container-fluid{
     
 }
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
