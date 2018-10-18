@@ -11,20 +11,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> Home </title>
         <!--cabeçalho-->
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <!--navbar-->
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
 
     </head>
-
+    
     <body id="bd">
         <br/>
         <br/>
-
         <!--Jumbotron-->
         <div class="container-fluid">
             <div id="JB" class="jumbotron">
+                <div class="container-fluid" style="margin-left: -7%">
                 <div class="row ">
                     <div id="botoes"class="col-sm-4">
                         <h3>Tabela de Pessoa Fisica</h3>
@@ -44,6 +45,7 @@
 
             </div>
 
+        </div>
         </div>
 
 
@@ -77,7 +79,7 @@
                         <div class="col-sm-4">
                             <div class="thumbnail">
                                 <!--<img src="Imagens/IMG_20160930_191248.jpg" alt=""/>-->
-                                <p><h2><strong>Vinicios Lopes</strong></h2></p>
+                                <p><h2><strong>Vinicios</strong></h2></p>
                                 <p><h4>Estudante de Análise e Desenvolvimento de Sistemas em Fatec - Praia Grande</h4></p>
 
                                 <a href="https://github.com/vinicioslop" <button class="btn btn-primary" >GitHub</button></a>

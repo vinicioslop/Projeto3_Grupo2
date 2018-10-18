@@ -9,17 +9,19 @@ and open the template in the editor.
 */
 
 #bd{
-    background-color: lightseagreen
+    background-color: lightseagreen;
+  
 }
 
 #botoes{
-    margin-left: 5%
+    margin-left: 8%
 }
 
 #JB{
    
     background-color: gainsboro;
-    margin-top: -6%;
+    margin-top: -2%;
+    
            
 }
 #JB2{
@@ -52,4 +54,52 @@ and open the template in the editor.
     background-color: black;
     color: white;
     text-align: center;
+}.jumbotron {
+
+}
+#Text1{
+   font-size: 4rem
+}
+
+.thumbnail{
+    align-content: center;
+    margin-right: 10%
+}
+.table-striped{
+    border-color: black
+}
+#Row1{
+    margin-left: 40%
+}
+#btn1{
+    border:1px solid; 
+    padding: 11px 21px; 
+    vertical-align: middle; 
+    background:#2D888F; 
+    color:white;
+    border-radius:6px; 
+    font-size: 20px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
+}
+#btn2{
+    border:1px solid; 
+    padding: 11px 21px; 
+    vertical-align: middle; 
+    background:#2D888F; 
+    color:white;
+    border-radius:6px; 
+    font-size: 20px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
+}
+#botao{
+    border:1px solid; 
+    padding: 2px 8px;
+    background:#2D888F;
+    color:white;
+    border-radius:6px;
+    font-size: 18px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
 }

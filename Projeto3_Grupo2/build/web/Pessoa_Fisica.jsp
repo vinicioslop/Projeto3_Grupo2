@@ -10,39 +10,76 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Pessoa Fisica</title>
+        <!--Cabeçalho-->
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <!--Navbar-->
+        <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
     </head>
-    <body>
-        <h1>Hello World!</h1>
-        <h1>TesteEeEeEe - Vinícius</h1>
-        <a href="new_pf.jsp"><button>Nova Pessoa Fisica</button></a>
-        <table border="1">
-            <tr>
-                <th>Nome</th>
-                <th>CPF</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>Comandos</th>
-                <%for(PessoaFisica c: Db_pf.getPessoaFisicas()){%>
+    <body id="bd">
+        <!--Jumbotron-->
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+                <div id="Text1"> Manutenção de Pessoa Fisica</div>
+
+            </div>
+        </div>
+
+        <!--Tabela-->
+        <div id="TabPF" class="container-fluid">
+            <div class="jumbotron text-center"
+                 
+
+                <div class="row text-center">
+                    <h2>Listagem</h2>
+                    
+                    <table class="table table-striped" border="1">
+                       
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Comandos</th>
+                            <%for (PessoaFisica c : Db_pf.getPessoaFisicas()) {%>
+
+
+                        <%}%>
+                    </tr>
+                    <%for (PessoaFisica npf : Db_pf.getPessoaFisicas()) {%>
+                    <tr>
+                        <td><%= npf.getNome()%></td>
+                        <td><%= npf.getCpf()%></td>
+                        <td><%= npf.getEmail()%></td>
+                        <td><%= npf.getTel_pf()%></td>
+                        <% int i = Db_pf.getPessoaFisicas().indexOf(npf);%>
+                        <td>
+                            <a href="alter_pf.jsp?i=<%= i%>"><button id="botao">Alterar</button></a>
+                            <a href="remove_pf.jsp?i=<%= i%>"><button id="botao">Remover</button></a>
+                        </td>
+                    </tr>
+                    <%}%>
+                </table>
                 
+                <!--<div id="Row1" class="row text-center">
+                    <div class="col-sm-4">
+                <a href="new_pf.jsp"><button>Nova Pessoa Fisica</button></a><br>
+                    </div>
+                    <div class="col-sm-4 ">
+                <a href="home.jsp"><button>Voltar</button></a>
+            </div>
+            </div>-->
                 
-                <%}%>
-            </tr>
-            <%for(PessoaFisica npf: Db_pf.getPessoaFisicas()){%>
-            <tr>
-                <td><%= npf.getNome()%></td>
-                <td><%= npf.getCpf()%></td>
-                <td><%= npf.getEmail()%></td>
-                <td><%= npf.getTel_pf()%></td>
-                <% int i = Db_pf.getPessoaFisicas().indexOf(npf); %>
-                <td>
-                    <a href="alter_pf.jsp?i=<%= i %>"><button>Alterar</button></a>
-                    <a href="remove_pf.jsp?i=<%= i %>"><button>Remover</button></a>
-                </td>
-            </tr>
-            <%}%>
-        </table>
-        <a href="home.jsp"><button>Voltar</button></a>
+                <div>
+                    <div>
+                        <a id="btn1"class="button floatLeft" href="new_pf.jsp">Novo Cadastro</a></div><br
+                </div>
+            </div>
+            <div>
+
+       <!--Rodapé-->   
+       <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>
