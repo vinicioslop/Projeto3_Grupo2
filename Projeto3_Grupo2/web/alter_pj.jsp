@@ -15,7 +15,7 @@
         <!--Navbar-->
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Alterar - Pessoa Júridica</title>
+        <title>Alterar - Pessoa Juridica</title>
     </head>
 
     <%int i = Integer.parseInt(request.getParameter("i"));%>
@@ -26,7 +26,7 @@
         <!--Jumbotron-->
         <div class="container-fluid">
             <div class="jumbotron text-center">
-                <div id="Text1"> Alterar Cadastro Pessoa Júridica</div>
+                <div id="Text1"> Alterar Cadastro Pessoa Jurídica</div>
 
             </div>
         </div>

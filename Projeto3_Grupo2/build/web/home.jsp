@@ -33,7 +33,7 @@
                     </div>  
                     
                     <div class="col-sm-4" style="align-items: center">
-                        <h3>Tabela de Pessoa Júridica</h3>
+                        <h3>Tabela de Pessoa Jurídica</h3>
                         <a href="Pessoa_Juridica.jsp"><button type="button" class="btn btn-primary btn-lg">Manutenção de Pessoa Jurídica</button></a>
                     </div>
                     

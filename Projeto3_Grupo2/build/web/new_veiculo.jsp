@@ -50,7 +50,7 @@
                             <div class="col-sm-4">
                                 <div class="thumbnail" style="align-content: center;  
                          border-width: 10px">
-                                    <form>
+                                    <form class="form-horizontal">
                                         <strong/> Placa: <br><input style="border-radius: 4px" type="text" name="placa"/><br>
                                         <strong/> Marca: <br><input style="border-radius: 4px" type="text" name="marca"/><br>
                                         <strong/> Modelo:<br><input style="border-radius: 4px" type="text" name="modelo"/><br>

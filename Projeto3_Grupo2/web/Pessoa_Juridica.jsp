@@ -23,7 +23,7 @@
           <!--Jumbotron-->
         <div class="container-fluid">
             <div class="jumbotron text-center">
-                <div id="Text1"> Manutenção de Pessoa Júridica</div>
+                <div id="Text1"> Manutenção de Pessoa Jurídica</div>
             </div>
         </div>
           
