@@ -56,7 +56,8 @@
                                     <strong/> CNPJ:<br><input type="text" name="cnpj"/><br>
                                     <strong/> Telefone: <br><input type="text" name="tel_pj"/><br>
                                     <strong/> Site: <br><input type="text" name="site"/><br>
-                                    <br><input type="submit" name="novoPJ" value="Incluir"/>
+                                    <br><input id="botao" type="submit" name="novoPJ" value="Incluir"/>
+                                    <a id="btn3"class="button floatLeft" href="Pessoa_Juridica.jsp">Voltar</a></div><br/>
                             </div>
                         </div>
                     </div>
@@ -66,11 +67,13 @@
         
         </form>
         
-               
+               <br/>
             <%} catch (Exception e){%>
             
            <%}%>
-           <a href="home.jsp"><button>Voltar</button></a>    
+               </div><br/>
+                            
+             
 
            <!--Rodapé-->   
            <%@include file="WEB-INF/jspf/footer.jspf"%>

@@ -59,9 +59,11 @@
                                     <strong/>Telefone: <br><input style="border-radius: 4px" type="text" name="tel_pf"/><br>
                                     <strong/>E-mail: <br><input style="border-radius: 4px" type="text" name="email"/><br>
                                     <br><input id="botao" type="submit" name="novoPF" value="Incluir"/>
-                                    <a id="btn3"class="button floatLeft" href="Pessoa_Fisica.jsp">Voltar</a></div><br
+                                    <a id="btn3"class="button floatLeft" href="Pessoa_Fisica.jsp">Voltar</a></div><br/>
                             </div>
                         </div>
+                    </div>
+                    </div>
                     </div>
 
             
