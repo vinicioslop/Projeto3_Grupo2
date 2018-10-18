@@ -22,7 +22,7 @@
         <!--Jumbotron-->
         <div class="container-fluid">
             <div class="jumbotron text-center">
-                <div id="Text1"> Manutenção de Pessoa Fisica</div>
+                <div id="Text1"> Manutenção de Pessoa Física</div>
 
             </div>
         </div>
