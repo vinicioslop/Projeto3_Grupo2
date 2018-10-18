@@ -51,11 +51,11 @@
                             <div class="thumbnail" style="align-content: center;  
                          border-width: 10px">
                                 <form class="form-horizontal">
-                                    <strong/> Nome: <br><input style="border-radius: 4px" type="text" name="nome"/><br>
-                                    <strong/> Razão Social: <br><input style="border-radius: 4px" type="text" name="razao"/><br>
-                                    <strong/> CNPJ:<br><input style="border-radius: 4px" type="text" name="cnpj"/><br>
-                                    <strong/> Telefone: <br><input style="border-radius: 4px" type="text" name="tel_pj"/><br>
-                                    <strong/> Site: <br><input style="border-radius: 4px" type="text" name="site"/><br>
+                                    <strong> Nome: </strong><br><input style="border-radius: 4px" type="text" name="nome"/><br>
+                                    <strong> Razão Social:</strong> <br><input style="border-radius: 4px" type="text" name="razao"/><br>
+                                    <strong> CNPJ:</strong><br><input style="border-radius: 4px" type="text" name="cnpj"/><br>
+                                    <strong> Telefone:</strong> <br><input style="border-radius: 4px" type="text" name="tel_pj"/><br>
+                                    <strong> Site:</strong> <br><input style="border-radius: 4px" type="text" name="site"/><br>
                                     <br><input id="botao" type="submit" name="novoPJ" value="Incluir"/>
                                     <a id="btn3"class="button floatLeft" href="Pessoa_Juridica.jsp">Voltar</a></div><br/>
                             </div>

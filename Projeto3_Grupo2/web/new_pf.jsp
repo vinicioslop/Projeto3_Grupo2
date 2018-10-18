@@ -54,10 +54,10 @@
                             <div class="thumbnail" style="align-content: center;  
                          border-width: 10px">
                                 <form class="form-horizontal">
-                                    <strong> Nome: <br><input style="border-radius: 4px" type="text" name="nome"/></strong></br>
-                                    <strong/>CPF:<br><input style="border-radius: 4px" type="text" name="cpf"/><br>
-                                    <strong/>Telefone: <br><input style="border-radius: 4px" type="text" name="tel_pf"/><br>
-                                    <strong/>E-mail: <br><input style="border-radius: 4px" type="text" name="email"/><br>
+                                <strong> Nome: </strong><br><input style="border-radius: 4px" type="text" name="nome"/></strong></br>
+                                <strong>CPF:</strong><br><input style="border-radius: 4px" type="text" name="cpf"/><br>
+                                <strong>Telefone:</strong> <br><input style="border-radius: 4px" type="text" name="tel_pf"/><br>
+                                <strong>E-mail:</strong> <br><input style="border-radius: 4px" type="text" name="email"/><br>
                                     <br><input id="botao" type="submit" name="novoPF" value="Incluir"/>
                                     <a id="btn3"class="button floatLeft" href="Pessoa_Fisica.jsp">Voltar</a></div><br/>
                             </div>

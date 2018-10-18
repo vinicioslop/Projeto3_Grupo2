@@ -19,13 +19,22 @@
         <title>Alterar - Pessoa Física</title>
         
     </head>
-    
     <%int i = Integer.parseInt(request.getParameter("i"));%>
     <%PessoaFisica npf = Db_pf.getPessoaFisicas().get(i);%>
     
-    <body>
-        <h1>Cadastro de Pessoa Física</h1>
-        <h2>Alterar</h2>
+    <body id="bd">
+        
+    
+           <body id="bd">
+               <!--Jumbotron-->
+               <div class="container-fluid">
+                   <div class="jumbotron text-center">
+                       <div id="Text1"> Alterar Cadastro Pessoa Física</div>
+
+
+                   </div>
+               </div>
+
         <%
             if(request.getParameter("alterPF")!=null){
                 npf.setNome(request.getParameter("nome"));
@@ -36,15 +45,30 @@
                 response.sendRedirect("Pessoa_Fisica.jsp");
             }
         %>
-        <form>
-            Indice: <%= i %><br/><br/>
-            <input type="hidden" name="i" value="<%=i%>"/>
-            Nome:<br/><input type="text" name="nome" value="<%=npf.getNome()%>"/><br/>
-            Nome:<br/><input type="text" name="cpf" value="<%=npf.getCpf()%>"/><br/>
-            Email:<br/><input type="text" name="email" value="<%=npf.getEmail()%>"/><br/>
-            Telefone:<br/><input type="text" name="tel_pf" value="<%=npf.getTel_pf()%>"/><br/>
-            <br/><input type="submit" name="alterPF" value="Alterar"/>
+        <!--Forms-->
+        <div class="container-fluid text-center" >
+                <div class="jumbotron text-center">
+                    <div class="row text-center">
+                        <div class="col-sm-4"></div> 
+                        <div class="col-sm-4">
+                            <div class="thumbnail" style="align-content: center;  
+                         border-width: 10px">
+                                <form class="form-horizontal">
+                                    <strong style="font-size: 2rem"> Indice: <%= i%><br/></strong>
+                                    <strong>Nome:</strong><br/><input style="border-radius: 4px"type="text" name="nome" value="<%=npf.getNome()%>"/><br/>
+                                    <strong>Nome:</strong><br/><input style="border-radius: 4px"type="text" name="cpf" value="<%=npf.getCpf()%>"/><br/>
+                                    <strong>Email:</strong><br/><input style="border-radius: 4px"type="text" name="email" value="<%=npf.getEmail()%>"/><br/>
+                                    <strong>Telefone:</strong><br/><input style="border-radius: 4px"type="text" name="tel_pf" value="<%=npf.getTel_pf()%>"/><br/>
+                                    <br/><input id="botao" type="submit" name="alterPF" value="Alterar"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            
+        
         </form>
+                                    <br/>
             <!--Rodapé-->   
             <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
