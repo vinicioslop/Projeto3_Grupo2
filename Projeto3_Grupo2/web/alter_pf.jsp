@@ -11,7 +11,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <!--Cabeçalho-->
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <!--Navbar-->
+        <%@include file="WEB-INF/jspf/navbar.jspf" %>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Alterar - Pessoa Física</title>
+        
     </head>
     
     <%int i = Integer.parseInt(request.getParameter("i"));%>

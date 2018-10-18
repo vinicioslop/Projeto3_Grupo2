@@ -10,12 +10,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Veículo</title>
         <!--Cabeçalho-->
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <!--Navbar-->
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Veículo</title>
+        
     </head>
     <body id="bd">
         <div class="container-fluid">
@@ -71,6 +72,6 @@
                 </div>
             </div>
         </div>
-        <a href="home.jsp"><button>Voltar</button></a>
+               <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

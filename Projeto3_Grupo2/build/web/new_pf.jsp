@@ -10,11 +10,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Novo - Contatos</title>
+        <!--Cabeçalho-->
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <!--Navbar-->
+        <%@include file="WEB-INF/jspf/navbar.jspf" %>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
     </head>
-    <body>
-        <h1>Cadastro Pessoa Fisica</h1>
+    <body id="bd">
+                <!--Jumbotron-->
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+                <div id="Text1"> Cadastro de Pessoa Física</div>
+
+            </div>
+        </div>
+
         
         <%try {
             if(request.getParameter("novoPF")!=null){
@@ -30,17 +44,38 @@
             }
             %>
             
-        <form>
-            Nome: <br><input type="text" name="nome"/><br>
-            CPF:<br><input type="text" name="cpf"/><br>
-            Telefone: <br><input type="text" name="tel_pf"/><br>
-            E-mail: <br><input type="text" name="email"/><br>
-            <br><input type="submit" name="novoPF" value="Incluir"/>
+            
+            <!--Forms-->
+            <div class="container-fluid text-center" >
+                <div class="jumbotron text-center">
+                    <div class="row text-center">
+                        <div class="col-sm-4"></div> 
+                        <div class="col-sm-4">
+                            <div class="thumbnail" style="align-content: center;  
+                         border-width: 10px">
+                                <form class="form-horizontal">
+                                    <strong> Nome: <br><input style="border-radius: 4px" type="text" name="nome"/></strong></br>
+                                    <strong/>CPF:<br><input style="border-radius: 4px" type="text" name="cpf"/><br>
+                                    <strong/>Telefone: <br><input style="border-radius: 4px" type="text" name="tel_pf"/><br>
+                                    <strong/>E-mail: <br><input style="border-radius: 4px" type="text" name="email"/><br>
+                                    <br><input id="botao" type="submit" name="novoPF" value="Incluir"/>
+                                    <a id="btn3"class="button floatLeft" href="Pessoa_Fisica.jsp">Voltar</a></div><br
+                            </div>
+                        </div>
+                    </div>
+
+            
         </form>
                
             <%} catch (Exception e){%>
             
            <%}%>
-           <a href="home.jsp"><button>Voltar</button></a>
+           
+            </div>
+            </div><br/>
+           
+           
+        <!--Rodapé-->
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>

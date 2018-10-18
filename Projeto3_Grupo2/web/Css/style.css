@@ -92,7 +92,20 @@ and open the template in the editor.
     font-size: 20px; 
     font-family:helvetica, serif;
     text-decoration:none;
+
 }
+#btn3{
+    border:1px solid; 
+    padding: 5px 8px;
+    background:#2D888F;
+    color:white;
+    border-radius:6px;
+    font-size: 18px; 
+    font-family:helvetica, serif;
+    text-decoration:none;
+}
+
+
 #botao{
     border:1px solid; 
     padding: 2px 8px;
@@ -102,4 +115,7 @@ and open the template in the editor.
     font-size: 18px; 
     font-family:helvetica, serif;
     text-decoration:none;
+}
+#thumb1{
+    align-content: center
 }
