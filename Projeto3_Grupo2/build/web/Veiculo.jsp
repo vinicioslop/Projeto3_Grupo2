@@ -71,7 +71,7 @@
             <div>
                 </div>
             </div>
-        </div>
+        </div> <br>
                <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

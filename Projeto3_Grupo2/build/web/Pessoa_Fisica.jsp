@@ -71,8 +71,9 @@
                 </div>
             </div>
             <div>
-
+                <br>
        <!--Rodapé-->   
        <%@include file="WEB-INF/jspf/footer.jspf"%>
+       
     </body>
 </html>
