@@ -29,7 +29,7 @@
 
         <!--Tabela-->
         <div id="TabPF" class="container-fluid">
-            <div class="jumbotron text-center"
+            <div class="jumbotron text-center">
                  
 
                 <div class="row text-center">
@@ -63,14 +63,7 @@
                     <%}%>
                 </table>
                 
-                <!--<div id="Row1" class="row text-center">
-                    <div class="col-sm-4">
-                <a href="new_pf.jsp"><button>Nova Pessoa Fisica</button></a><br>
-                    </div>
-                    <div class="col-sm-4 ">
-                <a href="home.jsp"><button>Voltar</button></a>
-            </div>
-            </div>-->
+                
                 
                 <div>
                     <div>
