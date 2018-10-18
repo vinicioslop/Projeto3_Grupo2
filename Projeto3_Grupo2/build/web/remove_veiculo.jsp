@@ -51,11 +51,12 @@
                                 <strong style="font-size: 2rem">Indice: <%= i%><br/><br/></strong>
                                 <input type="hidden" name="i" value="<%=i%>"/>
                                 <strong style="font-size: 2rem">Placa: <%=v.getPlaca()%><br/></strong>
-                                <strong style="font-size: 2rem">Marca:<%=v.getMarca()%><br/></strong>
-                                <strong style="font-size: 2rem">Modelo:<%=v.getModelo()%><br/></strong>
-                                <strong style="font-size: 2rem">Cor:<%=v.getCor()%><br/></strong>
+                                <strong style="font-size: 2rem">Marca: <%=v.getMarca()%><br/></strong>
+                                <strong style="font-size: 2rem">Modelo: <%=v.getModelo()%><br/></strong>
+                                <strong style="font-size: 2rem">Cor: <%=v.getCor()%><br/></strong>
 
                                 <br/><input id="botao" type="submit" name="removerV" value="Remover"/>
+                                <a id="btn3"class="button floatLeft" href="Veiculo.jsp">Voltar</a></div><br/>
                             </form>
                         </div>
                     </div>

@@ -57,6 +57,7 @@
                                 <strong>CNPJ:</strong><br/><input style="border-radius: 4px" type="text" name="cnpj" value="<%=d.getCnpj()%>"/><br/>
                                 <strong>Telefone:</strong><br/><input style="border-radius: 4px" type="text" name="tel_pj" value="<%=d.getTel_pj()%>"/><br/>
                                 <br/><input id="botao" type="submit" name="alterPJ" value="Alterar"/>
+                                <a id="btn3"class="button floatLeft" href="Pessoa_Juridica.jsp">Voltar</a></div><br/>
                             </form>
                             <!--Rodapé-->   
                             <%@include file="WEB-INF/jspf/footer.jspf"%>

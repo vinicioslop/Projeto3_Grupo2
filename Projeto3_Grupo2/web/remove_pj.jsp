@@ -55,9 +55,10 @@
                                 <strong style="font-size: 2rem">Nome: <%=d.getNome()%><br/></strong>
                                 <strong style="font-size: 2rem">Razaão: <%=d.getRazao()%><br/></strong>
                                 <strong style="font-size: 2rem">CNPJ: <%=d.getCnpj()%><br/></strong>
-                                <strong style="font-size: 2rem">Telefone:<%=d.getTel_pj()%><br/></strong>
+                                <strong style="font-size: 2rem">Telefone: <%=d.getTel_pj()%><br/></strong>
 
                                 <br/><input id="botao"type="submit" name="removerPJ" value="Remover"/>
+                                <a id="btn3"class="button floatLeft" href="Pessoa_Juridica.jsp">Voltar</a></div><br/>
                         </div>
                     </div>
                 </div>

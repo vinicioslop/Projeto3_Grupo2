@@ -58,6 +58,7 @@
                                 <strong style="font-size: 2rem">Email: <%=npf.getEmail()%><br/></strong>
 
                                 <br/><input id="botao"type="submit" name="removerPF" value="Remover"/>
+                                <a id="btn3"class="button floatLeft" href="Pessoa_Fisica.jsp">Voltar</a></div><br/>
                         </div>
                     </div>
                 </div>

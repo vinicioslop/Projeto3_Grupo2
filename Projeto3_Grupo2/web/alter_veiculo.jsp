@@ -60,6 +60,7 @@
                                 <strong>Modelo:</strong><br/><input style="border-radius: 4px" type="text" name="modelo" value="<%=v.getModelo()%>"/><br/>
                                 <strong>Cor:</strong><br/><input style="border-radius: 4px" type="text" name="cor" value="<%=v.getCor()%>"/><br/>
                                 <br/><input id="botao"type="submit" name="alterV" value="Alterar"/>
+                                <a id="btn3"class="button floatLeft" href="Veiculo.jsp">Voltar</a></div><br/>
                             </form>
 
                         </div>

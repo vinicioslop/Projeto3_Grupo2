@@ -60,6 +60,7 @@
                                     <strong>Email:</strong><br/><input style="border-radius: 4px"type="text" name="email" value="<%=npf.getEmail()%>"/><br/>
                                     <strong>Telefone:</strong><br/><input style="border-radius: 4px"type="text" name="tel_pf" value="<%=npf.getTel_pf()%>"/><br/>
                                     <br/><input id="botao" type="submit" name="alterPF" value="Alterar"/>
+                                    <a id="btn3"class="button floatLeft" href="Pessoa_Fisica.jsp">Voltar</a></div><br/>
                             </div>
                         </div>
                     </div>
