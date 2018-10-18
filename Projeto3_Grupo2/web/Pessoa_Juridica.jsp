@@ -12,7 +12,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Pessoa Júridica</title>
-        <title>Pessoa Fisica</title>
         <!--Cabeçalho-->
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <!--Navbar-->
@@ -25,7 +24,6 @@
         <div class="container-fluid">
             <div class="jumbotron text-center">
                 <div id="Text1"> Manutenção de Pessoa Juridica</div>
-
             </div>
         </div>
           
@@ -37,7 +35,7 @@
                 <div class="row text-center">
                     <h2>Listagem</h2>
                     
-                    <table class="table table-striped" border="1">
+                    <table class="table table-striped" border="2">
                        
                     <tr>
                         <th>Nome</th>

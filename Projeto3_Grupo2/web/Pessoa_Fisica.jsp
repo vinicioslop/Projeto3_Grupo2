@@ -35,7 +35,7 @@
                 <div class="row text-center">
                     <h2>Listagem</h2>
                     
-                    <table class="table table-striped" border="1">
+                    <table class="table table-striped" border="2">
                        
                     <tr>
                         <th>Nome</th>
