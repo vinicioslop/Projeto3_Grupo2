@@ -11,6 +11,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <%@include file="WEB-INF/jspf/header.jspf" %>
+        <!--Navbar-->
+        <%@include file="WEB-INF/jspf/navbar.jspf" %>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Alterar - Pessoa Júridica</title>
     </head>
     
@@ -38,5 +42,7 @@
             Telefone:<br/><input type="text" name="tel_pj" value="<%=d.getTel_pj()%>"/><br/>
             <br/><input type="submit" name="alterPJ" value="Alterar"/>
         </form>
+                   <!--Rodapé-->   
+       <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

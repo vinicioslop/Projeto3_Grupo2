@@ -11,10 +11,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <!--cabeçalho-->
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <!--navbar-->
+        <%@include file="WEB-INF/jspf/navbar.jspf" %>
+
+        <title>Novo - Pessoa Juridica</title>
     </head>
-    <body>
-        <h1>Cadastro Pessoa Juridica</h1>
+    <body id="bd">
+          <!--Jumbotron-->
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+                <div id="Text1"> Cadastro de Pessoa Júridica</div>
+
+            </div>
+        </div>
+  
         
         
         <%try {
@@ -30,14 +42,28 @@
                 Db_pj.getPessoaJuridicas().add(npj);
                 response.sendRedirect("Pessoa_Juridica.jsp");
             }%>
-            
-        <form>
-            Nome: <br><input type="text" name="nome"/><br>
-            Razão Social: <br><input type="text" name="razao"/><br>
-            CNPJ:<br><input type="text" name="cnpj"/><br>
-            Telefone: <br><input type="text" name="tel_pj"/><br>
-            Site: <br><input type="text" name="site"/><br>
-            <br><input type="submit" name="novoPJ" value="Incluir"/>
+<!--Forms-->
+<div class="container-fluid text-center" >
+                <div class="jumbotron text-center">
+                    <div class="row text-center">
+                        <div class="col-sm-4"></div> 
+                        <div class="col-sm-4">
+                            <div class="thumbnail" style="align-content: center;  
+                         border-width: 10px">
+                                <form class="form-horizontal">
+                                    <strong/> Nome: <br><input type="text" name="nome"/><br>
+                                    <strong/> Razão Social: <br><input type="text" name="razao"/><br>
+                                    <strong/> CNPJ:<br><input type="text" name="cnpj"/><br>
+                                    <strong/> Telefone: <br><input type="text" name="tel_pj"/><br>
+                                    <strong/> Site: <br><input type="text" name="site"/><br>
+                                    <br><input type="submit" name="novoPJ" value="Incluir"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
         </form>
         
                
@@ -45,5 +71,8 @@
             
            <%}%>
            <a href="home.jsp"><button>Voltar</button></a>    
+
+           <!--Rodapé-->   
+           <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

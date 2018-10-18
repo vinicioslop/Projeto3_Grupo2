@@ -6,7 +6,7 @@ import javax.servlet.jsp.*;
 import br.com.fatecpg.web.Db_pf;
 import br.com.fatecpg.web.PessoaFisica;
 
-public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class alter_005fpf_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -14,10 +14,9 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(3);
+    _jspx_dependants = new java.util.ArrayList<String>(2);
     _jspx_dependants.add("/WEB-INF/jspf/header.jspf");
     _jspx_dependants.add("/WEB-INF/jspf/navbar.jspf");
-    _jspx_dependants.add("/WEB-INF/jspf/footer.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -55,12 +54,11 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
-      out.write("        <title> Home </title>\n");
-      out.write("        <!--cabeçalho-->\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("                <!--Cabeçalho-->\n");
       out.write("        ");
       out.write("\n");
       out.write("\n");
@@ -85,7 +83,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<link rel=\"stylesheet\" media=\"(orientation: portrait)\" href=\"portrait.css\">\n");
       out.write("<link rel=\"stylesheet\" media=\"(orientation: landscape)\" href=\"landscape.css\">");
       out.write("\n");
-      out.write("        <!--navbar-->\n");
+      out.write("        <!--Navbar-->\n");
       out.write("        ");
       out.write("\n");
       out.write("\n");
@@ -109,95 +107,56 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  </div>\n");
       out.write("</nav>");
       out.write("\n");
-      out.write("\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Alterar - Pessoa Física</title>\n");
+      out.write("        \n");
       out.write("    </head>\n");
       out.write("    \n");
-      out.write("    <body id=\"bd\">\n");
-      out.write("        <br/>\n");
-      out.write("        <br/>\n");
-      out.write("        <!--Jumbotron-->\n");
-      out.write("        <div class=\"container-fluid\">\n");
-      out.write("            <div id=\"JB\" class=\"jumbotron\">\n");
-      out.write("                <div class=\"container-fluid\" style=\"margin-left: -7%\">\n");
-      out.write("                <div class=\"row \">\n");
-      out.write("                    <div id=\"botoes\"class=\"col-sm-4\">\n");
-      out.write("                        <h3>Tabela de Pessoa Fisica</h3>\n");
-      out.write("                        <a href=\"Pessoa_Fisica.jsp\"><button type=\"button\"class=\"btn btn-primary btn-lg\">Manutenção de Pessoa Física</button></a>\n");
-      out.write("                    </div>  \n");
-      out.write("                    \n");
-      out.write("                    <div class=\"col-sm-4\" style=\"align-items: center\">\n");
-      out.write("                        <h3>Tabela de Pessoa Juridica</h3>\n");
-      out.write("                        <a href=\"Pessoa_Juridica.jsp\"><button type=\"button\" class=\"btn btn-primary btn-lg\">Manutenção de Pessoa Jurídica</button></a>\n");
-      out.write("                    </div>\n");
-      out.write("                    \n");
-      out.write("                    <div>\n");
-      out.write("                        <h3>Tabela de Veiculos</h3>\n");
-      out.write("                        <a href=\"Veiculo.jsp\"><button type=\"button\"class=\"btn btn-primary btn-lg\">Manutenção de Veículo</button></a>\n");
-      out.write("                    </div>\n");
-      out.write("                </div>\n");
+      out.write("    ");
+int i = Integer.parseInt(request.getParameter("i"));
       out.write("\n");
-      out.write("            </div>\n");
+      out.write("    ");
+PessoaFisica npf = Db_pf.getPessoaFisicas().get(i);
       out.write("\n");
-      out.write("        </div>\n");
-      out.write("        </div>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <div class=\"container-fluid\"> \n");
-      out.write("            <div id=\"JB2\" class=\"jumbotron\">\n");
-      out.write("                <div class=\"container-fluid text-center\">\n");
-      out.write("                    <h2>Integrantes</h2><br>\n");
-      out.write("\n");
-      out.write("                    <div class=\"row text-center slideanim\">\n");
-      out.write("                        <div class=\"col-sm-4\">\n");
-      out.write("                            <div class=\"thumbnail\">\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("                                <p><h2><strong>Daniel Gomes</strong></h2></p>\n");
-      out.write("                                <p><h4>Estudante de Análise e Desenvolvimento de Sistemas em Fatec - Praia Grande</h4></p>\n");
-      out.write("\n");
-      out.write("                                <a href=\"https://github.com/danielbgo\" <button class=\"btn btn-primary\" >GitHub</button></a>\n");
-      out.write("                            </div>\n");
-      out.write("                        </div>\n");
-      out.write("\n");
-      out.write("                        <div class=\"col-sm-4\">\n");
-      out.write("                            <div class=\"thumbnail\">\n");
-      out.write("\n");
-      out.write("                                <p><h2><strong>Valéria Regina</strong></h2></p>\n");
-      out.write("                                <p><h4>Estudante de Análise e Desenvolvimento de Sistemas em Fatec - Praia Grande</h4></p>\n");
-      out.write("\n");
-      out.write("                                <a href=\"https://github.com/ValeriaRoyal\" <button class=\"btn btn-primary\" >GitHub</button></a>\n");
-      out.write("                            </div>\n");
-      out.write("                        </div>\n");
-      out.write("\n");
-      out.write("                        <div class=\"col-sm-4\">\n");
-      out.write("                            <div class=\"thumbnail\">\n");
-      out.write("                                <!--<img src=\"Imagens/IMG_20160930_191248.jpg\" alt=\"\"/>-->\n");
-      out.write("                                <p><h2><strong>Vinícius Lopes</strong></h2></p>\n");
-      out.write("                                <p><h4>Estudante de Análise e Desenvolvimento de Sistemas em Fatec - Praia Grande</h4></p>\n");
-      out.write("\n");
-      out.write("                                <a href=\"https://github.com/vinicioslop\" <button class=\"btn btn-primary\" >GitHub</button></a>\n");
-      out.write("                            </div>\n");
-      out.write("                        </div>\n");
-      out.write("                    </div>     \n");
-      out.write("                </div>     \n");
-      out.write("            </div>     \n");
-      out.write("        </div><br>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <!--Rodapé-->\n");
+      out.write("    \n");
+      out.write("    <body>\n");
+      out.write("        <h1>Cadastro de Pessoa Física</h1>\n");
+      out.write("        <h2>Alterar</h2>\n");
       out.write("        ");
+
+            if(request.getParameter("alterPF")!=null){
+                npf.setNome(request.getParameter("nome"));
+                npf.setCpf(request.getParameter("cpf"));
+                npf.setEmail(request.getParameter("email"));
+                npf.setTel_pf(request.getParameter("tel_pf"));
+                Db_pf.getPessoaFisicas().set(i,npf);
+                response.sendRedirect("Pessoa_Fisica.jsp");
+            }
+        
       out.write("\n");
-      out.write("\n");
-      out.write("<div class=\"container-fluid\" style=\"max-height: 200px; \">\n");
-      out.write("<footer class=\"footer-css\">\n");
-      out.write("    <p class=\"fonte\">Desenvolvido em Outubro/2018</p>\n");
-      out.write("</footer>\n");
-      out.write("</div>");
-      out.write("\n");
+      out.write("        <form>\n");
+      out.write("            Indice: ");
+      out.print( i );
+      out.write("<br/><br/>\n");
+      out.write("            <input type=\"hidden\" name=\"i\" value=\"");
+      out.print(i);
+      out.write("\"/>\n");
+      out.write("            Nome:<br/><input type=\"text\" name=\"nome\" value=\"");
+      out.print(npf.getNome());
+      out.write("\"/><br/>\n");
+      out.write("            Nome:<br/><input type=\"text\" name=\"cpf\" value=\"");
+      out.print(npf.getCpf());
+      out.write("\"/><br/>\n");
+      out.write("            Email:<br/><input type=\"text\" name=\"email\" value=\"");
+      out.print(npf.getEmail());
+      out.write("\"/><br/>\n");
+      out.write("            Telefone:<br/><input type=\"text\" name=\"tel_pf\" value=\"");
+      out.print(npf.getTel_pf());
+      out.write("\"/><br/>\n");
+      out.write("            <br/><input type=\"submit\" name=\"alterPF\" value=\"Alterar\"/>\n");
+      out.write("        </form>\n");
       out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

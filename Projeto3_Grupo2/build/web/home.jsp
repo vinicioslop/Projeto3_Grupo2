@@ -28,12 +28,12 @@
                 <div class="container-fluid" style="margin-left: -7%">
                 <div class="row ">
                     <div id="botoes"class="col-sm-4">
-                        <h3>Tabela de Pessoa Fisica</h3>
+                        <h3>Tabela de Pessoa Física</h3>
                         <a href="Pessoa_Fisica.jsp"><button type="button"class="btn btn-primary btn-lg">Manutenção de Pessoa Física</button></a>
                     </div>  
                     
                     <div class="col-sm-4" style="align-items: center">
-                        <h3>Tabela de Pessoa Juridica</h3>
+                        <h3>Tabela de Pessoa Júridica</h3>
                         <a href="Pessoa_Juridica.jsp"><button type="button" class="btn btn-primary btn-lg">Manutenção de Pessoa Jurídica</button></a>
                     </div>
                     

@@ -45,5 +45,7 @@
             Telefone:<br/><input type="text" name="tel_pf" value="<%=npf.getTel_pf()%>"/><br/>
             <br/><input type="submit" name="alterPF" value="Alterar"/>
         </form>
+            <!--Rodapé-->   
+            <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>
