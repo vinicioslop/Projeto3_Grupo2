@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <!--Cabeçalho-->
+        <!--Cabeçalho-->
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <!--Navbar-->
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
@@ -19,13 +19,13 @@
         <title>Alterar - Pessoa Física</title>
         
     </head>
+    
     <%int i = Integer.parseInt(request.getParameter("i"));%>
     <%PessoaFisica npf = Db_pf.getPessoaFisicas().get(i);%>
     
     <body id="bd">
         
-    
-           <body id="bd">
+            <body id="bd">
                <!--Jumbotron-->
                <div class="container-fluid">
                    <div class="jumbotron text-center">
@@ -36,7 +36,7 @@
                </div>
 
         <%
-            if(request.getParameter("alterPF")!=null){
+            if(request.getParameter("alterPF")!= null){
                 npf.setNome(request.getParameter("nome"));
                 npf.setCpf(request.getParameter("cpf"));
                 npf.setEmail(request.getParameter("email"));
@@ -55,6 +55,7 @@
                          border-width: 10px">
                                 <form class="form-horizontal">
                                     <strong style="font-size: 2rem"> Indice: <%= i%><br/></strong>
+                                    <input type="hidden" name="i" value="<%=i%>"/>
                                     <strong>Nome:</strong><br/><input style="border-radius: 4px"type="text" name="nome" value="<%=npf.getNome()%>"/><br/>
                                     <strong>Nome:</strong><br/><input style="border-radius: 4px"type="text" name="cpf" value="<%=npf.getCpf()%>"/><br/>
                                     <strong>Email:</strong><br/><input style="border-radius: 4px"type="text" name="email" value="<%=npf.getEmail()%>"/><br/>
